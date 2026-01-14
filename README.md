@@ -240,16 +240,16 @@ Momento del registro: Al crear tu paquete inicial (paso 5.2), debes añadir tu n
 
 Formato: Utiliza una lista de Markdown que incluya tu alias y, opcionalmente, un enlace a tu perfil de GitHub:
 
-Markdown
-- [TuAlias](https://github.com/TuUsuario)
-
+```Markdown
+[TuAlias](https://github.com/TuUsuario)
+```
 Ubicación: Añade tu nombre al final de la lista existente para evitar conflictos de mezcla (merge conflicts) con otros registros recientes.
 
 Ejemplo de actualización:
 Cuando realices tu primer commit de estructura, incluye la modificación del archivo:
 
-# 1. Editar el archivo CONTRIBUTORS.md y añadir tu alias
-# 2. Registrar el cambio junto con tu paquete
+1. Editar el archivo CONTRIBUTORS.md y añadir tu alias
+2. Registrar el cambio junto con tu paquete
 ```bash
 git add src/<TU_ALIAS> CONTRIBUTORS.md
 ```
