@@ -241,8 +241,8 @@ Momento del registro: Al crear tu paquete inicial (paso 5.2), debes añadir tu n
 Formato: Utiliza una lista de Markdown que incluya tu alias y, opcionalmente, un enlace a tu perfil de GitHub:
 
 Markdown
-
 - [TuAlias](https://github.com/TuUsuario)
+
 Ubicación: Añade tu nombre al final de la lista existente para evitar conflictos de mezcla (merge conflicts) con otros registros recientes.
 
 Ejemplo de actualización:
