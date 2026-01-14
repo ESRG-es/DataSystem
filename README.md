@@ -232,8 +232,36 @@ git pull --no-rebase
 
 Gracias al sparse checkout, tu copia local únicamente actualizará los cambios que ocurran en tu carpeta (src/<TU_ALIAS>/) y en los archivos raíz del proyecto (como el propio README.md), manteniendo el entorno ligero y rápido.
 
-<img src="assets/braceR_128,128,128.png" width="40"/>
+### 5.5 Registro de Contribuidores (CONTRIBUTORS.md)
+Para mantener un reconocimiento transparente de todos los desarrolladores que forman parte de DataSystem, el repositorio cuenta con un archivo central llamado CONTRIBUTORS.md en la raíz del proyecto.
 
+Reglas de registro:
+Momento del registro: Al crear tu paquete inicial (paso 5.2), debes añadir tu nombre o alias a este archivo.
+
+Formato: Utiliza una lista de Markdown que incluya tu alias y, opcionalmente, un enlace a tu perfil de GitHub:
+
+Markdown
+
+- [TuAlias](https://github.com/TuUsuario)
+Ubicación: Añade tu nombre al final de la lista existente para evitar conflictos de mezcla (merge conflicts) con otros registros recientes.
+
+Ejemplo de actualización:
+Cuando realices tu primer commit de estructura, incluye la modificación del archivo:
+
+# 1. Editar el archivo CONTRIBUTORS.md y añadir tu alias
+# 2. Registrar el cambio junto con tu paquete
+```bash
+git add src/<TU_ALIAS> CONTRIBUTORS.md
+```
+```bash
+git commit -m "feat: añadir paquete de <TU_ALIAS> y registro en CONTRIBUTORS"
+```
+```bash
+git push origin main
+```
+> Nota: A diferencia de tu carpeta en src/, el archivo CONTRIBUTORS.md es uno de los pocos archivos compartidos que todos los colaboradores están autorizados a editar exclusivamente para añadir su propia información.
+
+<img src="assets/braceR_128,128,128.png" width="40"/>
 
 
 
